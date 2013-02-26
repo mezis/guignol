@@ -150,6 +150,8 @@ module Guignol::Models
 
   private
 
+    DNS_MUTEX = Mutex.dns
+
     def default_options
       { :volumes => {} }
     end
